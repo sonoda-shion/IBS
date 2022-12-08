@@ -99,6 +99,8 @@ header {
 
 header .title {
   width: 100vw;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .items {
@@ -197,6 +199,7 @@ header .title {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  border-radius: 5px;
 }
 
 .btn-area {
@@ -217,6 +220,7 @@ header .title {
   margin: 0 auto;
   line-height: 17px;
   font-size: 12px;
+  color: #333333;
 }
 
 .btn-area .btn {
@@ -384,5 +388,97 @@ footer ul a:nth-child(1) {
 
   br {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .main-sec {
+    padding: 90px 0;
+  }
+  .form-inner {
+    gap: 150px;
+  }
+  .form-inner .item {
+    padding: 50px 0;
+  }
+
+  .form-inner .item .title {
+    margin-bottom: 50px;
+  }
+
+  .form-inner .item .title .q-title {
+    font-size: 40px;
+  }
+
+  .form-inner .item .title .q-text {
+    font-size: 24px;
+    padding-top: 8px;
+  }
+
+  .input-items .btn {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  .q5_flex {
+    align-items: center;
+  }
+
+  .btn-area {
+    gap: 50px;
+  }
+
+  .btn-area .title {
+    font-size: 40px;
+  }
+
+  .btn-area .text {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .btn-area .btn {
+    width: 50%;
+    max-width: 700px;
+    padding: 20px 0;
+    font-size: 24px;
+  }
+  .footer-inner {
+    padding: 90px 0;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  header {
+    background-image: url(/assets/img/header-pc.svg);
+  }
+  .items {
+    width: 1360px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .items .img {
+    width: 25%;
+    height: 300px;
+  }
+
+  .items::after {
+    content: none;
+  }
+
+  .img1 {
+    width: 185px;
+  }
+
+  .img2 {
+    width: 175px;
+  }
+
+  .img3 {
+    width: 163px;
+  }
+
+  .img4 {
+    width: 160px;
   }
 }
