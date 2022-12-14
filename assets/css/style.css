@@ -52,6 +52,8 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-font);
   color: var(--text-color);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 h1,
@@ -150,6 +152,64 @@ header .title {
 
 .main-sec {
   padding: 60px 0;
+}
+
+.main {
+  position: relative;
+}
+
+.main .bg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
+.bg.v-1 {
+  top: 200px;
+  width: 80%;
+  max-width: 549px;
+}
+.bg.v-2 {
+  left: 0;
+  top: 400px;
+  width: 50%;
+  max-width: 320px;
+}
+.bg.v-3 {
+  top: 700px;
+  left: 0;
+  width: 50%;
+  max-width: 340px;
+}
+.bg.v-4 {
+  top: 1000px;
+  width: 50%;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 1080px) {
+  .bg.v-1 {
+    top: 370px;
+    width: 80%;
+    max-width: 949px;
+  }
+  .bg.v-2 {
+    left: 0;
+    top: 690px;
+    width: 50%;
+    max-width: 720px;
+  }
+  .bg.v-3 {
+    top: 1270px;
+    left: 0;
+    width: 50%;
+    max-width: 780px;
+  }
+  .bg.v-4 {
+    top: 1870px;
+    width: 50%;
+    max-width: 720px;
+  }
 }
 
 /* QUESTIONS */
@@ -396,7 +456,7 @@ footer ul a:nth-child(1) {
     padding: 90px 0;
   }
   .form-inner {
-    gap: 150px;
+    gap: 200px;
   }
   .form-inner .item {
     padding: 50px 0;
